@@ -78,7 +78,7 @@ const About = () => {
       </section>
 
       {/* Skills Section */}
-      <section className="skills" id="skils">
+      {/* <section className="skills" id="skils">
         <div className="max-width">
           <div
             className="atributos"
@@ -110,7 +110,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 };

@@ -6,7 +6,7 @@ const Contact = () => {
     <>
       <Header page />
       <h1 className="max-width" style={{ paddingTop: "100px" }}>
-        Contact
+        Contact [em produção...]
       </h1>
     </>
   );
