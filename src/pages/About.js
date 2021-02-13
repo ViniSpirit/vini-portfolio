@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Spinner, ProgressBar } from "react-bootstrap";
+import { ProgressBar } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "../components/Header";
 import profile from "../images/profile.jpg";
@@ -32,7 +32,7 @@ const About = () => {
   const [description, setDescription] = useState(en);
   return (
     <>
-      <Header page />
+      <Header page about />
       <section className="about" id="about">
         <div className="max-width">
           <div className="about-content">

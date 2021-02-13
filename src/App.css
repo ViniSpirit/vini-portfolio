@@ -75,11 +75,19 @@
   transition: color 0.3s ease;
 }
 
+.toolbar .color1 li a.active {
+  color: crimson;
+}
+
 .toolbar .color2 li a {
   color: #333;
   font-size: 25px;
   font-weight: 500;
   transition: color 0.3s ease;
+}
+
+.toolbar .color2 li a.active {
+  color: crimson;
 }
 
 .toolbar .menu li a:hover {

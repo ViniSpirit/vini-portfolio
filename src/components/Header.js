@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-const Header = ({ page }) => {
+const Header = ({ page, home, about, contact, projects }) => {
   const [burger, setBurger] = useState(false);
 
   const [hide, setHide] = useState(false);
@@ -27,7 +27,7 @@ const Header = ({ page }) => {
   return (
     <nav
       id={page ? "test" : ""}
-      className={`toolbar`}
+      className="toolbar"
       style={hide ? { display: "none" } : { display: "block" }}
     >
       <div className="max-width">
@@ -42,16 +42,24 @@ const Header = ({ page }) => {
           }`}
         >
           <li>
-            <Link to="/">Home</Link>
+            <Link className={home ? "active" : ""} to="/">
+              Home
+            </Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <Link className={about ? "active" : ""} to="/about">
+              About
+            </Link>
           </li>
           <li>
-            <Link to="/projects">Projects</Link>
+            <Link className={projects ? "active" : ""} to="/projects">
+              Projects
+            </Link>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <Link className={contact ? "active" : ""} to="/contact">
+              Contact
+            </Link>
           </li>
         </ul>
         <div

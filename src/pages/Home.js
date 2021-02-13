@@ -5,7 +5,7 @@ import Header from "../components/Header";
 const Home = ({ history }) => {
   return (
     <>
-      <Header />
+      <Header home />
       <section className="home" id="home">
         <div className="max-width">
           <div className="home-content">
