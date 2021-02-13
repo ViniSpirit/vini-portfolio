@@ -11,7 +11,7 @@
 
 .btnMain {
   margin-top: 45px;
-  font-size: 18px;
+  font-size: 25px;
   border-radius: 5px;
   cursor: pointer;
   font-family: "Ubuntu", sans-serif;
@@ -19,7 +19,7 @@
   border: 0;
   color: #fff;
   padding: 0 30px;
-  height: 45px;
+  height: 55px;
   transition: color 0.3s ease;
   outline: 0;
 }

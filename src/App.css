@@ -35,7 +35,7 @@
 }
 
 .toolbar .logo a {
-  font-size: 35px;
+  font-size: 50px;
   font-weight: 600;
   text-decoration: none;
 }
@@ -70,14 +70,14 @@
 
 .toolbar .color1 li a {
   color: #fff;
-  font-size: 18px;
+  font-size: 25px;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
 .toolbar .color2 li a {
   color: #333;
-  font-size: 18px;
+  font-size: 25px;
   font-weight: 500;
   transition: color 0.3s ease;
 }
@@ -88,7 +88,7 @@
 
 /* menu btn style */
 .menu-btn {
-  font-size: 23px;
+  font-size: 25px;
   cursor: pointer;
   display: none;
 }
@@ -149,7 +149,7 @@
 }
 
 .footer a i {
-  font-size: 30px;
+  font-size: 35px;
   color: #fff;
 }
 
