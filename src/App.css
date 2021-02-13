@@ -1,38 +1,346 @@
-.App {
+.max-width {
+  max-width: 1300px;
+  margin: auto;
+}
+
+/* Navbar Styling */
+
+.toolbar {
+  position: fixed;
+  width: 100%;
+  padding: 15px;
+  z-index: 999;
+  font-family: "Ubuntu", sans-serif;
+  animation: navanimation 1.5s ease;
+}
+
+@keyframes navanimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+#test {
+  border-bottom: 1px solid #cecece;
+}
+
+.toolbar .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.toolbar .logo a {
+  font-size: 35px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.toolbar .color1 a {
+  color: #fff;
+}
+
+.toolbar .color2 a {
+  color: #333;
+}
+
+.toolbar .logo a span {
+  color: crimson;
+}
+
+.toolbar .menu {
+  list-style: none;
+  display: flex;
+}
+.toolbar .menu li {
+  margin-left: 15px;
+}
+
+.menu li a {
+  text-decoration: none;
+}
+
+.toolbar .menu li:first-child {
+  margin-left: 0;
+}
+
+.toolbar .color1 li a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.toolbar .color2 li a {
+  color: #333;
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.toolbar .menu li a:hover {
+  color: crimson;
+}
+
+/* menu btn style */
+.menu-btn {
+  font-size: 23px;
+  cursor: pointer;
+  display: none;
+}
+
+/* Home section style */
+
+.home {
+  display: flex;
+  background: url("./images/teclado2.jpg") no-repeat center;
+  flex-direction: column;
+  height: 100vh;
+  color: #fff;
+  min-height: 500px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.home .max-width {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home .home-content {
+  animation: contentmove 1.3s ease;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@keyframes contentmove {
+  0% {
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.home .home-content .text-1 {
+  font-size: 27px;
+}
+.home .home-content .text-2 {
+  font-size: 75px;
+  font-weight: 600;
+}
+.home .home-content .text-3 {
+  font-size: 40px;
+}
+.home .home-content .text-3 span {
+  color: crimson;
+  font-weight: 500;
+}
+
+/* footer */
+
+.footer {
+  margin-bottom: 20px;
+  text-align: center;
+  animation: footeranimation 1.5s ease;
+}
+
+.footer a i {
+  font-size: 30px;
+  color: #fff;
+}
+
+.footer a i:hover {
+  transform: scaleY(1.1);
+}
+
+@keyframes footeranimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* About section */
+
+.about {
+  font-family: "Poppins", sans-serif;
+}
+
+.about .title {
+  position: relative;
+  font-size: 40px;
+  font-weight: 500;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  padding-bottom: 20px;
+  margin-bottom: 60px;
+}
+
+.about .title::before {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 3px;
+  bottom: 0px;
+  left: 50%;
+  background: #111;
+  transform: translateX(-50%);
+}
+
+.about .title::after {
+  content: "who i am";
+  position: absolute;
+  bottom: -14px;
+  padding: 5px;
+  left: 50%;
+  font-size: 20px;
+  color: crimson;
+  background: #fff;
+  transform: translateX(-50%);
+}
+
+.about-content {
+  padding: 15px;
+  padding-top: 150px;
+}
+
+.flex {
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.about .about-content .left {
+  width: 30%;
+}
+.about .about-content .right {
+  width: 70%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.about .about-content .left img {
+  width: 300px;
+  border-radius: 5px;
+  filter: drop-shadow(0 5px 3px #000);
+}
+
+.about .about-content .right .text {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.about .about-content .right .text span {
+  color: crimson;
+}
+.about .about-content .right p {
+  text-align: justify;
+}
+.about .about-content .right a {
+  display: inline-block;
+  background-color: crimson;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  border: 2px solid crimson;
+  transition: all 0.3s ease;
+}
+
+.about .about-content .right a:hover {
+  background-color: transparent;
+  color: crimson;
+}
+
+/* responsive media query start */
+
+@media (max-width: 700px) {
+  .menu-btn {
+    display: block;
+    z-index: 999;
   }
-  to {
-    transform: rotate(360deg);
+  .menu-btn i {
+    color: crimson;
+  }
+
+  .menu-btn i.active:before {
+    content: "\f00d";
+  }
+
+  .toolbar .menu {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+    top: 0;
+    background: #111;
+    transition: all 0.3s ease;
+  }
+  .toolbar .menu.active {
+    left: 0;
+  }
+  .toolbar .menu {
+    display: flex;
+    padding-top: 50px;
+    align-items: center;
+    flex-direction: column;
+  }
+  .toolbar .menu li {
+    margin: 20px 0;
+    font-size: 25px;
+  }
+  .toolbar .menu li a {
+    color: crimson;
+  }
+  .toolbar .menu li a:hover {
+    color: #fff;
+  }
+}
+
+@media (max-width: 600px) {
+  .home .home-content .text-1 {
+    font-size: 25px;
+  }
+  .home .home-content .text-2 {
+    font-size: 45px;
+    font-weight: 600;
+  }
+  .home .home-content .text-3 {
+    font-size: 32px;
+  }
+  .home .home-content .text-3 span {
+    color: crimson;
+    font-weight: 500;
+  }
+}
+
+/* about media */
+
+@media (max-width: 1050px) {
+  .about .about-content .left {
+    width: 300px;
+  }
+  .flex {
+    justify-content: center;
+  }
+  .about .about-content .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  .about .about-content .right .text {
+    text-align: center;
   }
 }
