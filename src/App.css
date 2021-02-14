@@ -25,7 +25,7 @@
 }
 
 #test {
-  border-bottom: 1px solid #cecece;
+  box-shadow: 0 4px 8px rgb(30 60 90 / 10%);
 }
 
 .toolbar .max-width {
@@ -277,11 +277,12 @@
   max-width: 60%;
   margin: 60px auto;
   display: flex;
-  border: 5px solid #eee;
+
   border-radius: 5px;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  box-shadow: 0 1px 8px 5px rgb(30 60 90 / 20%);
 }
 
 .atributos h2 {
@@ -301,7 +302,7 @@
 
 .atributos .tech:hover {
   cursor: pointer;
-  transform: scaleY(1.03);
+  transform: scaleY(1.01);
 }
 
 /* responsive media query start */
@@ -365,7 +366,7 @@
     font-weight: 500;
   }
   .atributos {
-    max-width: 100%;
+    max-width: 95%;
     margin-top: 20px;
   }
 }
