@@ -11,7 +11,7 @@
   padding: 15px;
   z-index: 999;
   font-family: "Ubuntu", sans-serif;
-  animation: navanimation 1.5s ease;
+  /* animation: navanimation 1.5s ease; */
 }
 
 @keyframes navanimation {
@@ -179,6 +179,8 @@
 
 .about {
   font-family: "Poppins", sans-serif;
+  padding-bottom: 40px;
+  background-color: #eee;
 }
 
 .about .title {
@@ -210,7 +212,7 @@
   left: 50%;
   font-size: 20px;
   color: crimson;
-  background: #fff;
+  background: #eee;
   transform: translateX(-50%);
 }
 
@@ -266,6 +268,40 @@
 .about .about-content .right a:hover {
   background-color: transparent;
   color: crimson;
+}
+
+/* Skills section */
+
+.atributos {
+  padding: 15px;
+  max-width: 60%;
+  margin: 60px auto;
+  display: flex;
+  border: 5px solid #eee;
+  border-radius: 5px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.atributos h2 {
+  align-self: center;
+  margin-bottom: 20px;
+}
+
+.atributos p {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.atributos .tech {
+  width: 100%;
+  margin-bottom: 35px;
+}
+
+.atributos .tech:hover {
+  cursor: pointer;
+  transform: scaleY(1.03);
 }
 
 /* responsive media query start */
@@ -327,6 +363,10 @@
   .home .home-content .text-3 span {
     color: crimson;
     font-weight: 500;
+  }
+  .atributos {
+    max-width: 100%;
+    margin-top: 20px;
   }
 }
 

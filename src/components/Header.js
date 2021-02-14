@@ -12,7 +12,7 @@ const Header = ({ page, home, about, contact, projects }) => {
     function scrollCatch() {
       const scroll = window.scrollY;
 
-      if (scroll >= 125) {
+      if (scroll >= 50) {
         setHide(true);
       } else {
         setHide(false);
