@@ -9,14 +9,14 @@ const Home = ({ history }) => {
       <section className="home" id="home">
         <div className="max-width">
           <div className="home-content">
-            <div className="text-1">Hello, my name is</div>
+            <div className="text-1">Oi, meu nome é</div>
             <div className="text-2">Marcos Vinicius</div>
             <div className="text-3">
-              And I'm a <span>Web Developer.</span>
+              <span>Web Developer.</span>
             </div>
           </div>
           <button onClick={() => history.push("/about")} className="btnMain">
-            About me
+            Sobre mim
           </button>
         </div>
         <footer className="footer">

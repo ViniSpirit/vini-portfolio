@@ -6,7 +6,7 @@ import profile from "../images/profile.jpg";
 import pdf from "../images/mv.pdf";
 const About = () => {
   const pt = {
-    title: "Oi meu nome é Marcos Vinicius e sou ",
+    title: "Meu nome é Marcos Vinicius e sou ",
     content: `Moro em São Bernardo do Campo SP, tenho 27 anos, há 2 anos
     descobri minha paixão por programação e decidi migrar de
     carreira, então passei a me dedicar a aprender as tecnologias
@@ -29,20 +29,20 @@ const About = () => {
     status: "en",
   };
 
-  const [description, setDescription] = useState(en);
+  const [description, setDescription] = useState(pt);
   return (
     <>
       <Header page about />
       <section className="about" id="about">
         <div className="max-width">
           <div className="about-content">
-            <h2 className="title">About me</h2>
+            <h2 className="title">Sobre mim</h2>
             <div className="flex">
               <div className="column left">
                 <img src={profile} alt="profile" />
               </div>
               <div className="column right">
-                <div style={{ marginBottom: "20px" }}>
+                {/* <div style={{ marginBottom: "20px" }}>
                   <button
                     className={`btnTranslate ${
                       description.status === "en" ? "active" : ""
@@ -59,7 +59,7 @@ const About = () => {
                   >
                     PT
                   </button>
-                </div>
+                </div> */}
 
                 <div className="text">
                   {description && description.title}

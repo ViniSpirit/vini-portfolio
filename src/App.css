@@ -305,7 +305,66 @@
   transform: scaleY(1.01);
 }
 
+/* Projects section */
+
+.projects-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.projects h1 {
+  text-align: center;
+  padding: 30px;
+}
+
+.projects-content .button-links {
+  display: flex;
+}
+
+.projects-content .button-links form {
+  margin-left: 20px;
+}
+
+.projects-content .button-links form:first-child {
+  margin-left: 0px;
+}
+
+.cardBtn {
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Ubuntu", sans-serif;
+  background: crimson;
+  border: 0;
+  color: #fff;
+  width: 150px;
+  height: 40px;
+  outline: 0;
+  transition: color 0.3s ease;
+}
+
+.cardBtn:hover {
+  background: transparent;
+  border: 2px solid;
+  color: crimson;
+  border-color: crimson;
+}
+
 /* responsive media query start */
+
+@media (max-width: 800px) {
+  .projects-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .cardBtn {
+    font-size: 15px;
+    width: 130px;
+  }
+}
 
 @media (max-width: 700px) {
   .menu-btn {
