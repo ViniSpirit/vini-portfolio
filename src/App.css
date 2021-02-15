@@ -535,9 +535,9 @@
 }
 
 .contact-content form button {
-  width: 30%;
-  padding: 8px 0px;
-  font-size: 18px;
+  width: 150px;
+  height: 40px;
+  font-size: 20px;
   border-radius: 5px;
   cursor: pointer;
   font-family: "Ubuntu", sans-serif;
