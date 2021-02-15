@@ -53,6 +53,45 @@ const Contact = () => {
             </div>
           </div>
         </div>
+
+        <footer
+          className="footer"
+          style={{
+            backgroundColor: "#eee",
+            padding: "18px 0 13px 0",
+            margin: 0,
+            boxShadow: "0 1px 8px 5px rgb(30 60 90 / 20%)",
+          }}
+        >
+          <a
+            href="https://github.com/ViniSpirit"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i style={{ color: "#333" }} className="fab fa-github"></i>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/marcos-vinicius-75863a74/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i
+              style={{ color: "#333", marginLeft: "30px" }}
+              className="fab fa-linkedin"
+            ></i>
+          </a>
+          <a
+            href="https://twitter.com/ViniSpiritDev"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i
+              style={{ color: "#333", marginLeft: "30px" }}
+              className="fab fa-twitter-square"
+            ></i>
+          </a>
+        </footer>
       </section>
     </>
   );

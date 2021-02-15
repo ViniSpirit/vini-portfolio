@@ -434,7 +434,6 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
-
   font-family: "Ubuntu", sans-serif;
 }
 .contact-title {
@@ -445,6 +444,7 @@
 .contact-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
+
   padding: 20px 20px 100px 20px;
   gap: 20px;
   justify-content: center;
@@ -670,8 +670,19 @@
 
 @media (max-width: 900px) {
   .contact-content {
-    width: 90%;
-    margin: auto;
-    grid-template-columns: 1fr;
+    display: block;
+  }
+  .contact-content .content-info {
+    max-width: 100%;
+  }
+  .contact-content form {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .contact-content {
+    max-width: 350px;
+    display: block;
   }
 }
