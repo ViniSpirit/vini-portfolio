@@ -670,10 +670,12 @@
 
 @media (max-width: 900px) {
   .contact-content {
-    display: block;
+    grid-template-columns: 1fr;
+    gap: 40px;
   }
   .contact-content .content-info {
     max-width: 100%;
+    padding-bottom: 30px;
   }
   .contact-content form {
     max-width: 100%;
@@ -683,6 +685,7 @@
 @media (max-width: 500px) {
   .contact-content {
     max-width: 350px;
-    display: block;
+    grid-template-columns: 1fr;
+    gap: 40px;
   }
 }
