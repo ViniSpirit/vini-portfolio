@@ -77,11 +77,51 @@ const About = () => {
         </div>
       </section>
 
+      {/* Services */}
+      <section className="services">
+        <div className="max-width">
+          <h2 className="title1">Meus Serviços</h2>
+          <div className="serv-content">
+            <div className="card1">
+              <div className="box">
+                <i className="fas fa-paint-brush"></i>
+                <div className="text1">Front-End</div>
+                <p>
+                  Páginas web atraentes e interativas, com foco no design e
+                  experiência do usuário.
+                </p>
+              </div>
+            </div>
+            <div className="card1">
+              <div className="box">
+                <i className="fas fa-cogs"></i>
+                <div className="text1">Back-End</div>
+                <p>
+                  Criação de APIs , Integração com banco de dados entre outros
+                  recursos.
+                </p>
+              </div>
+            </div>
+            <div className="card1">
+              <div className="box">
+                <i className="fas fa-mobile-alt"></i>
+                <div className="text1">Mobile</div>
+                <p>
+                  Apps modernos multiplataforma, interativos, com foco no design
+                  e experiência do usuário.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Skills Section */}
       <section className="skills" id="skils">
-        <div className="max-width">
+        <div className="max-width ">
+          <h2 className="text3">Minhas Habilidades</h2>
           <div className="atributos">
-            <h2>Skills Level</h2>
+            <h2>Nivel</h2>
             <div className="tech">
               <p>JavaScript</p>
               <ProgressBar

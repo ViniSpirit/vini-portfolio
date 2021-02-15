@@ -180,10 +180,10 @@
 .about {
   font-family: "Poppins", sans-serif;
   padding-bottom: 40px;
-  background-color: #eee;
 }
 
 .about .title {
+  text-decoration: underline;
   position: relative;
   font-size: 40px;
   font-weight: 500;
@@ -193,7 +193,13 @@
   margin-bottom: 60px;
 }
 
-.about .title::before {
+@media (max-width: 700px) {
+  .about .title {
+    margin-bottom: 20px;
+  }
+}
+
+/* .about .title::before {
   content: "";
   position: absolute;
   width: 180px;
@@ -214,7 +220,7 @@
   color: crimson;
   background: #eee;
   transform: translateX(-50%);
-}
+} */
 
 .about-content {
   padding: 15px;
@@ -270,9 +276,110 @@
   color: crimson;
 }
 
+/* Services  */
+.services {
+  font-family: "Poppins", sans-serif;
+  background-color: #333;
+  color: #fff;
+  height: 550px;
+}
+.services .title1 {
+  text-decoration: underline;
+  padding-top: 60px;
+  text-align: center;
+}
+
+.serv-content {
+  height: 500px;
+  padding: 20px 20px 100px 20px;
+  display: flex;
+
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card1 {
+  width: 400px;
+  height: 250px;
+  border-radius: 5px;
+  padding: 20px;
+  margin-right: 20px;
+  text-align: center;
+  color: #333;
+  background: #eee;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.card1 .box .text1 {
+  font-weight: 500;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.card1 .box i {
+  color: crimson;
+  font-size: 50px;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+.card1 .box p {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.card1:last-child {
+  margin-right: 0;
+}
+
+.card1:hover {
+  transform: scale(1.03);
+
+  background: crimson;
+  color: #fff;
+}
+.card1:hover i {
+  color: #fff;
+}
+
+@media (max-width: 800px) {
+  .serv-content {
+    display: block;
+    width: 90%;
+    margin: auto;
+    padding: 0;
+  }
+  .services {
+    height: 800px;
+  }
+
+  .card1 {
+    width: 100%;
+    height: 200px;
+    padding: 10px 3px 20px 3px;
+    margin: 0 auto 20px auto;
+  }
+
+  .card1:last-child {
+    margin-bottom: 0;
+  }
+
+  .services .title1 {
+    padding-top: 30px;
+    padding-bottom: 25px;
+  }
+}
+
 /* Skills section */
 
+.skills .text3 {
+  padding-top: 60px;
+  text-align: center;
+  text-decoration: underline;
+}
+
 .atributos {
+  font-family: "Poppins", sans-serif;
   padding: 15px;
   max-width: 60%;
   margin: 60px auto 100px auto;
@@ -425,7 +532,11 @@
   }
   .atributos {
     max-width: 95%;
-    margin-top: 20px;
+    margin-top: 40px;
+  }
+
+  .skills .text3 {
+    padding-top: 40px;
   }
 }
 
