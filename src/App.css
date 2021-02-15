@@ -189,14 +189,8 @@
   font-weight: 500;
   text-align: center;
   font-family: "Ubuntu", sans-serif;
-  padding-bottom: 20px;
-  margin-bottom: 60px;
-}
 
-@media (max-width: 700px) {
-  .about .title {
-    margin-bottom: 20px;
-  }
+  margin-bottom: 60px;
 }
 
 /* .about .title::before {
@@ -379,6 +373,7 @@
 }
 
 .atributos {
+  position: relative;
   font-family: "Poppins", sans-serif;
   padding: 15px;
   max-width: 60%;
@@ -414,6 +409,7 @@
 /* Projects section */
 
 .projects-content {
+  font-family: "Poppins", sans-serif;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
@@ -421,6 +417,8 @@
 }
 
 .projects h1 {
+  font-family: "Poppins", sans-serif;
+  text-decoration: underline;
   text-align: center;
   padding: 30px;
 }
@@ -452,6 +450,105 @@
 }
 
 .cardBtn:hover {
+  background: transparent;
+  border: 2px solid;
+  color: crimson;
+  border-color: crimson;
+}
+
+/* Contact section */
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: "Ubuntu", sans-serif;
+}
+.contact-title {
+  padding: 30px;
+  text-align: center;
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 40px 20px 100px 20px;
+  gap: 20px;
+  justify-content: center;
+}
+
+.contact-content .item {
+  display: flex;
+  align-items: center;
+
+  padding: 20px 0;
+}
+
+.contact-content .item i {
+  font-size: 50px;
+  margin-right: 20px;
+  color: crimson;
+}
+.contact-content .item p {
+  font-size: 18px;
+  margin: 0;
+}
+.contact-content .item p p {
+  font-weight: 500;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .contact-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* content form */
+.contact-content form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-title {
+  text-decoration: underline;
+}
+
+.contact-content form input {
+  height: 40px;
+  padding: 15px 12px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  outline: 0;
+  font-size: 20px;
+  border: 1px solid;
+  box-shadow: 0 4px 8px rgb(30 60 90 / 10%);
+}
+
+.contact-content form textarea {
+  box-shadow: 0 4px 8px rgb(30 60 90 / 10%);
+  border-radius: 5px;
+  padding: 15px 12px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  outline: 0;
+}
+
+.contact-content form button {
+  width: 30%;
+  padding: 8px 0px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Ubuntu", sans-serif;
+  background: crimson;
+  border: 0;
+  color: #fff;
+  outline: 0;
+  transition: color 0.3s ease;
+}
+
+.contact-content form button:hover {
   background: transparent;
   border: 2px solid;
   color: crimson;
@@ -545,6 +642,9 @@
 @media (max-width: 1050px) {
   .about .about-content .left {
     width: 300px;
+  }
+  .about .title {
+    margin-bottom: 20px;
   }
   .flex {
     justify-content: center;

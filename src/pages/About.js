@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import { ProgressBar } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "../components/Header";
@@ -17,17 +18,17 @@ const About = () => {
     status: "pt",
   };
 
-  const en = {
-    title: `I'm Marcos Vinicius and I'm a `,
-    content: `I live in São Bernardo do Campo SP, I'm 27 years old, 2 years ago
-    I discovered my passion for programming and decided to migrate
-    career, so I started to dedicate myself to learn the technologies
-    most current for web development, and today I am comfortable to say that
-    I'm a Full-Stack Web developer, focusing on MERN
-    Stack (MongoDB, Express, React.js, Node.js).`,
-    span: "Web Developer",
-    status: "en",
-  };
+  // const en = {
+  //   title: `I'm Marcos Vinicius and I'm a `,
+  //   content: `I live in São Bernardo do Campo SP, I'm 27 years old, 2 years ago
+  //   I discovered my passion for programming and decided to migrate
+  //   career, so I started to dedicate myself to learn the technologies
+  //   most current for web development, and today I am comfortable to say that
+  //   I'm a Full-Stack Web developer, focusing on MERN
+  //   Stack (MongoDB, Express, React.js, Node.js).`,
+  //   span: "Web Developer",
+  //   status: "en",
+  // };
 
   const [description, setDescription] = useState(pt);
   return (

@@ -1,4 +1,5 @@
 import React from "react";
+
 import { Card, Carousel } from "react-bootstrap";
 import Header from "../components/Header";
 
@@ -18,7 +19,6 @@ const Projects = () => {
           className="max-width"
           style={{
             paddingTop: "100px",
-            borderBottom: "1px solid rgba(0,0,0,.125)",
           }}
         >
           <h1>Meus Projetos</h1>

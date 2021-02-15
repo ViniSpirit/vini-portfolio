@@ -83,3 +83,7 @@
   color: crimson;
   border-color: crimson;
 }
+
+.toBtn:hover {
+  transform: scale(1.03);
+}
