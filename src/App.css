@@ -275,9 +275,8 @@
 .atributos {
   padding: 15px;
   max-width: 60%;
-  margin: 60px auto;
+  margin: 60px auto 100px auto;
   display: flex;
-
   border-radius: 5px;
   flex-direction: column;
   justify-content: center;
@@ -311,7 +310,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 .projects h1 {

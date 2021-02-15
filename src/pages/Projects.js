@@ -24,12 +24,18 @@ const Projects = () => {
           <h1>Meus Projetos</h1>
           <div className="projects-content">
             {/* Card 1 */}
-            <Card style={{ width: "100%" }}>
+            <Card
+              style={{
+                width: "100%",
+                backgroundColor: "#eee",
+                boxShadow: "0 1px 8px 5px rgb(30 60 90 / 20%)",
+              }}
+            >
               <Card.Img variant="top" src={img3} />
               <Card.Body>
                 <Card.Title>Sobre o Portfolio</Card.Title>
                 <Card.Text>
-                  Projeto desenvolvido utilizando React.js, CSS e Bootstrap.
+                  Projeto desenvolvido em React.js, CSS e Bootstrap.
                 </Card.Text>
                 <div className="button-links">
                   <form
@@ -46,7 +52,13 @@ const Projects = () => {
             </Card>
 
             {/* Card 2 */}
-            <Card style={{ width: "100%" }}>
+            <Card
+              style={{
+                width: "100%",
+                backgroundColor: "#eee",
+                boxShadow: "0 1px 8px 5px rgb(30 60 90 / 20%)",
+              }}
+            >
               <Card.Img
                 variant="top"
                 src={img5}
@@ -55,8 +67,7 @@ const Projects = () => {
               <Card.Body>
                 <Card.Title>Blog do Vini</Card.Title>
                 <Card.Text>
-                  Projeto desenvolvido utilizando Next.js, CSS, Node.js e
-                  MongoDB.
+                  Projeto desenvolvido em Next.js, CSS, Node.js e MongoDB.
                 </Card.Text>
                 <div className="button-links">
                   <form
@@ -82,11 +93,17 @@ const Projects = () => {
             </Card>
 
             {/* Card 3 */}
-            <Card style={{ width: "100%" }}>
+            <Card
+              style={{
+                width: "100%",
+                backgroundColor: "#eee",
+                boxShadow: "0 1px 8px 5px rgb(30 60 90 / 20%)",
+              }}
+            >
               <Card.Img variant="top" src={img4} />
               <Card.Body>
                 <Card.Title>Calculadora</Card.Title>
-                <Card.Text>Projeto desenvolvido em React.js e CSS</Card.Text>
+                <Card.Text>Projeto desenvolvido em React.js e CSS.</Card.Text>
                 <div className="button-links">
                   <form
                     action="https://github.com/ViniSpirit/Calculator"
@@ -111,7 +128,13 @@ const Projects = () => {
             </Card>
 
             {/* Card 4 */}
-            <Card style={{ width: "100%" }}>
+            <Card
+              style={{
+                width: "100%",
+                backgroundColor: "#eee",
+                boxShadow: "0 1px 8px 5px rgb(30 60 90 / 20%)",
+              }}
+            >
               <Carousel>
                 <Carousel.Item>
                   <img
@@ -123,7 +146,9 @@ const Projects = () => {
                 </Carousel.Item>
                 <Carousel.Item>
                   <img
-                    style={{ borderBottom: "1px solid rgba(0,0,0,.125)" }}
+                    style={{
+                      borderBottom: "1px solid rgba(0,0,0,.125)",
+                    }}
                     className="d-block w-100"
                     src={proImg2}
                     alt="First slide"
@@ -142,9 +167,14 @@ const Projects = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <button className="cardBtn" type="submit">
+                    <button
+                      style={{ marginRight: "20px" }}
+                      className="cardBtn"
+                      type="submit"
+                    >
                       Veja no Github
                     </button>
+                    (em produção...)
                   </form>
                 </div>
               </Card.Body>
