@@ -18,22 +18,22 @@ const Contact = () => {
               </p>
               <div className="item">
                 <i className="fab fa-whatsapp"></i>
-                <p>
+                <div>
                   <p>Cell</p> (11) 960810791
-                </p>
+                </div>
               </div>
               <div className="item">
                 <i className="fas fa-map-marker-alt"></i>
 
-                <p>
+                <div>
                   <p>Endereço</p>Av. Moinho Fabrini 339, SBC, Brasil
-                </p>
+                </div>
               </div>
               <div className="item">
                 <i className="far fa-envelope"></i>
-                <p>
+                <div>
                   <p>Email</p> marcosvims@gmail.com
-                </p>
+                </div>
               </div>
             </div>
             <div>
@@ -41,7 +41,7 @@ const Contact = () => {
                 <h2>Mande um email</h2>
                 <input type="text" placeholder="Nome" required />
                 <input type="email" placeholder="Email" required />
-                <input type="text" placeholder="Assunto" requirede />
+                <input type="text" placeholder="Assunto" required />
                 <textarea
                   cols="30"
                   rows="5"
