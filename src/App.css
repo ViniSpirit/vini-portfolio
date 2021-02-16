@@ -700,6 +700,21 @@
     text-align: justify;
   }
 }
+@media (max-width: 400px) {
+  .contact-content {
+    max-width: 350px;
+  }
+}
+@media (max-width: 350px) {
+  .contact-content {
+    max-width: 320px;
+  }
+}
+@media (max-width: 320px) {
+  .contact-content {
+    max-width: 300px;
+  }
+}
 
 @media (max-width: 500px) {
   .button-links {
