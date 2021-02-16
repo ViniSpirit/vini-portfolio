@@ -162,7 +162,7 @@
 }
 
 .footer a i:hover {
-  transform: scaleY(1.1);
+  transform: scale(1.1);
 }
 
 @keyframes footeranimation {
@@ -673,9 +673,8 @@
     grid-template-columns: 1fr;
     gap: 40px;
   }
-  .contact-content .content-info {
+  .contact-content .contact-info {
     max-width: 100%;
-    padding-bottom: 30px;
   }
   .contact-content form {
     max-width: 100%;
@@ -687,5 +686,29 @@
     max-width: 350px;
     grid-template-columns: 1fr;
     gap: 40px;
+  }
+
+  .contact-content .contact-info {
+    max-width: 90%;
+    margin: auto;
+  }
+  .contact-content form {
+    max-width: 90%;
+    margin: auto;
+  }
+
+  .description {
+    text-align: justify;
+  }
+}
+
+@media (max-width: 500px) {
+  .button-links {
+    display: flex;
+    justify-content: center;
+  }
+  .cardBtn {
+    width: 112px;
+    font-size: 14px;
   }
 }

@@ -224,10 +224,8 @@ const About = () => {
       <footer
         className="footer"
         style={{
-          backgroundColor: "#eee",
           padding: "18px 0 13px 0",
           margin: 0,
-          boxShadow: "0 1px 8px 5px rgb(30 60 90 / 20%)",
         }}
       >
         <a
