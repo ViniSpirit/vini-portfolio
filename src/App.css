@@ -433,21 +433,28 @@
 .contact {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
+
   font-family: "Ubuntu", sans-serif;
 }
 .contact-title {
-  padding: 30px;
+  padding-top: 150px;
   text-align: center;
+  text-decoration: underline;
 }
 
 .contact-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
 
   padding: 20px 20px 100px 20px;
-  gap: 20px;
   justify-content: center;
+}
+
+.contact-info {
+  width: 50%;
+}
+.contact-form {
+  width: 50%;
 }
 
 .contact-content .item {
@@ -474,10 +481,6 @@
 .contact-content form {
   display: flex;
   flex-direction: column;
-}
-
-.contact-title {
-  text-decoration: underline;
 }
 
 .contact-content form input {
@@ -681,20 +684,16 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .contact-content {
-    max-width: 350px;
-    grid-template-columns: 1fr;
-    gap: 40px;
+    flex-direction: column;
   }
 
-  .contact-content .contact-info {
-    max-width: 90%;
-    margin: auto;
+  .contact-info {
+    width: 100%;
   }
-  .contact-content form {
-    max-width: 90%;
-    margin: auto;
+  .contact-form {
+    width: 100%;
   }
 
   .description {

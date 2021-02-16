@@ -12,8 +12,7 @@ const About = () => {
     descobri minha paixão por programação e decidi migrar de
     carreira, então passei a me dedicar a aprender as tecnologias
     mais atuais para desenvolvimento web, e hoje estou confortavel pra dizer que
-    sou um desenvolvedor Web Full-Stack, com foco na MERN
-    Stack(MongoDB, Express, React.js, Node.js).`,
+    sou um desenvolvedor Front-End a caminho do Full-Stack.`,
     span: "Desenvolvedor Web",
     status: "pt",
   };
@@ -30,7 +29,7 @@ const About = () => {
   //   status: "en",
   // };
 
-  const [description, setDescription] = useState(pt);
+  const [description] = useState(pt);
   return (
     <>
       <Header page about />

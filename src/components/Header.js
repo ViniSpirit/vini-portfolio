@@ -33,7 +33,7 @@ const Header = ({ page, home, about, contact, projects }) => {
       <div className="max-width">
         <div className={`logo ${page ? "color2" : "color1"}`}>
           <Link to="/">
-            Portfo<span>lio.</span>
+            Portfó<span>lio.</span>
           </Link>
         </div>
         <ul
@@ -43,22 +43,22 @@ const Header = ({ page, home, about, contact, projects }) => {
         >
           <li>
             <Link className={home ? "active" : ""} to="/">
-              Home
+              Início
             </Link>
           </li>
           <li>
             <Link className={about ? "active" : ""} to="/about">
-              About
+              Sobre
             </Link>
           </li>
           <li>
             <Link className={projects ? "active" : ""} to="/projects">
-              Projects
+              Projetos
             </Link>
           </li>
           <li>
             <Link className={contact ? "active" : ""} to="/contact">
-              Contact
+              Contato
             </Link>
           </li>
         </ul>

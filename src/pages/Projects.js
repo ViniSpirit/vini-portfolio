@@ -33,7 +33,7 @@ const Projects = () => {
             >
               <Card.Img variant="top" src={img3} />
               <Card.Body>
-                <Card.Title>Sobre o Portfolio</Card.Title>
+                <Card.Title>Sobre o Portfólio</Card.Title>
                 <Card.Text>
                   Projeto desenvolvido em React.js, CSS e Bootstrap.
                 </Card.Text>
