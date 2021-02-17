@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Spinner } from "react-bootstrap";
 import axios from "axios";
 import Header from "../components/Header";
 
@@ -7,7 +8,7 @@ const Contact = () => {
   const [email, setEmail] = useState("");
   const [assunto, setAssunto] = useState("");
   const [msg, setMsg] = useState("");
-  const [alert, setAlert] = useState(false);
+  const [alert, setAlert] = useState("");
 
   const sendEmail = async (e) => {
     e.preventDefault();
@@ -17,7 +18,7 @@ const Contact = () => {
     //     "Content-type": "application/json",
     //   },
     // };
-
+    setAlert("carregando");
     const { data } = await axios.post(
       "https://vini-portfolio-backend.herokuapp.com/api/email",
       {
@@ -29,9 +30,9 @@ const Contact = () => {
       // config
     );
     if (data === "enviado") {
-      setAlert(true);
+      setAlert("enviado");
     } else {
-      setAlert(false);
+      setAlert("");
     }
   };
 
@@ -108,7 +109,16 @@ const Contact = () => {
                 ></textarea>
                 <button type="submit">Enviar</button>
               </form>
-              {alert && (
+              {alert === "carregando" && (
+                <Spinner
+                  animation="border"
+                  role="status"
+                  style={{ marginTop: "20px" }}
+                >
+                  <span className="sr-only">Loading...</span>
+                </Spinner>
+              )}
+              {alert === "enviado" && (
                 <div
                   style={{ marginTop: "20px" }}
                   className="alert alert-success"
