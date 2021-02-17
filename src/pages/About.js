@@ -11,8 +11,8 @@ const About = () => {
     content: `Moro em São Bernardo do Campo SP, tenho 27 anos, há 2 anos
     descobri minha paixão por programação e decidi migrar de
     carreira, então passei a me dedicar a aprender as tecnologias
-    mais atuais para desenvolvimento web, e hoje estou confortavel pra dizer que
-    sou um desenvolvedor Front-End a caminho do Full-Stack.`,
+    mais atuais do mercado, e hoje 
+    sou um desenvolvedor Full-Stack.`,
     span: "Desenvolvedor Web",
     status: "pt",
   };
@@ -132,7 +132,7 @@ const About = () => {
               />
             </div>
             <div className="tech">
-              <p>React.js</p>
+              <p>ReactJS</p>
               <ProgressBar
                 style={{ height: "25px" }}
                 animated
@@ -159,7 +159,7 @@ const About = () => {
               />
             </div>
             <div className="tech">
-              <p>Node.js</p>
+              <p>NodeJS</p>
               <ProgressBar
                 style={{ height: "25px" }}
                 animated
@@ -177,6 +177,16 @@ const About = () => {
               />
             </div>
             <div className="tech">
+              <p>Redux</p>
+              <ProgressBar
+                style={{ height: "25px" }}
+                animated
+                variant="warning"
+                now={60}
+                label={"60%"}
+              />
+            </div>
+            <div className="tech">
               <p>React Native</p>
               <ProgressBar
                 style={{ height: "25px" }}
@@ -187,7 +197,7 @@ const About = () => {
               />
             </div>
             <div className="tech">
-              <p>Next.js</p>
+              <p>NextJS</p>
               <ProgressBar
                 style={{ height: "25px" }}
                 animated
@@ -204,16 +214,6 @@ const About = () => {
                 variant="warning"
                 now={50}
                 label={"50%"}
-              />
-            </div>
-            <div className="tech">
-              <p>Python</p>
-              <ProgressBar
-                style={{ height: "25px" }}
-                animated
-                variant="danger"
-                now={40}
-                label={"40%"}
               />
             </div>
           </div>

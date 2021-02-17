@@ -35,7 +35,10 @@ const Projects = () => {
               <Card.Body>
                 <Card.Title>Sobre o Portfólio</Card.Title>
                 <Card.Text>
-                  Projeto desenvolvido em ReactJS, NodeJS, CSS e Bootstrap.
+                  <strong>Descrição: </strong>Projeto desenvolvido para divulgar
+                  meu trabalho a ideia foi aludir a um site de uma empresa.
+                  <br /> <strong>tecnologias: </strong>ReactJS, CSS, NodeJS,
+                  Express, React-Bootstrap.
                 </Card.Text>
                 <div className="button-links">
                   <form
@@ -67,7 +70,13 @@ const Projects = () => {
               <Card.Body>
                 <Card.Title>Blog</Card.Title>
                 <Card.Text>
-                  Projeto desenvolvido em NextJS, CSS, NodeJS e MongoDB.
+                  <strong>Descrição: </strong>
+                  Desenvolvi este projeto para testar o poder do NextJS com
+                  geração de páginas estáticas e renderização do lado do
+                  servidor.
+                  <br />
+                  <strong>Tecnologias: </strong>NextJS, CSS, NodeJS, Express,
+                  MongoDB e Markdown.
                 </Card.Text>
                 <div className="button-links">
                   <form
@@ -103,7 +112,13 @@ const Projects = () => {
               <Card.Img variant="top" src={img4} />
               <Card.Body>
                 <Card.Title>Calculadora</Card.Title>
-                <Card.Text>Projeto desenvolvido em ReactJS e CSS.</Card.Text>
+                <Card.Text>
+                  <strong>Descrição: </strong>Meu primeiro projeto em ReactJS me
+                  deu uma boa noção sobre a biblioteca e lógica de programação
+                  no geral.
+                  <br />
+                  <strong>Tecnologias: </strong>ReactJS e CSS.
+                </Card.Text>
                 <div className="button-links">
                   <form
                     action="https://github.com/ViniSpirit/Calculator"
@@ -158,8 +173,12 @@ const Projects = () => {
               <Card.Body>
                 <Card.Title>Proshop</Card.Title>
                 <Card.Text>
-                  Projeto desenvolvido em ReactJS, NodeJS, MongoDB e React
-                  Bootstrap.
+                  <strong>Descrição: </strong>Estou trabalhando em um
+                  E-Commerce, meu maior projeto até agora, assim que estiver
+                  pronto coloco no ar.
+                  <br />
+                  <strong>Tecnologias: </strong>ReactJS, Bootsrap, Redux,
+                  NodeJS, Express e MongoDB.
                 </Card.Text>
                 <div className="button-links">
                   <form
