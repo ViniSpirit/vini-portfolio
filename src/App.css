@@ -493,6 +493,10 @@
   border: 1px solid #c5c5c5;
   box-shadow: 0 4px 8px rgb(30 60 90 / 10%);
 }
+
+.contact-content form input:focus {
+  transform: scale(1.03);
+}
 .contact-content form input::placeholder {
   color: #cecece;
 }
@@ -505,6 +509,10 @@
   border: 1px solid #c5c5c5;
   margin-bottom: 20px;
   outline: 0;
+}
+
+.contact-content form textarea:focus {
+  transform: scale(1.03);
 }
 
 .contact-content form textarea::placeholder {
