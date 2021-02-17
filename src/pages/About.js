@@ -17,18 +17,6 @@ const About = () => {
     status: "pt",
   };
 
-  // const en = {
-  //   title: `I'm Marcos Vinicius and I'm a `,
-  //   content: `I live in São Bernardo do Campo SP, I'm 27 years old, 2 years ago
-  //   I discovered my passion for programming and decided to migrate
-  //   career, so I started to dedicate myself to learn the technologies
-  //   most current for web development, and today I am comfortable to say that
-  //   I'm a Full-Stack Web developer, focusing on MERN
-  //   Stack (MongoDB, Express, React.js, Node.js).`,
-  //   span: "Web Developer",
-  //   status: "en",
-  // };
-
   const [description] = useState(pt);
   return (
     <>
@@ -42,25 +30,6 @@ const About = () => {
                 <img src={profile} alt="profile" />
               </div>
               <div className="column right">
-                {/* <div style={{ marginBottom: "20px" }}>
-                  <button
-                    className={`btnTranslate ${
-                      description.status === "en" ? "active" : ""
-                    }`}
-                    onClick={() => setDescription(en)}
-                  >
-                    EN
-                  </button>
-                  <button
-                    className={`btnTranslate ${
-                      description.status === "pt" ? "active" : ""
-                    }`}
-                    onClick={() => setDescription(pt)}
-                  >
-                    PT
-                  </button>
-                </div> */}
-
                 <div className="text">
                   {description && description.title}
                   <span>{description && description.span}</span>
@@ -121,7 +90,7 @@ const About = () => {
         <div className="max-width ">
           <h2 className="text3">Minhas Habilidades</h2>
           <div className="atributos">
-            <h2>Nivel</h2>
+            <h2>Skills Level</h2>
             <div className="tech">
               <p>JavaScript</p>
               <ProgressBar

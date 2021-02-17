@@ -40,7 +40,7 @@ const Contact = () => {
     <>
       <Header page contact />
       <section className="contact">
-        <h1 className="contact-title">Contatos</h1>
+        <h1 className="contact-title">Contato</h1>
         <div
           className="max-width"
           style={{
