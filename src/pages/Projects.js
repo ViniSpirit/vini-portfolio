@@ -35,7 +35,7 @@ const Projects = () => {
               <Card.Body>
                 <Card.Title>Sobre o Portfólio</Card.Title>
                 <Card.Text>
-                  Projeto desenvolvido em React.js, CSS e Bootstrap.
+                  Projeto desenvolvido em ReactJS, NodeJS, CSS e Bootstrap.
                 </Card.Text>
                 <div className="button-links">
                   <form
@@ -65,9 +65,9 @@ const Projects = () => {
                 style={{ borderBottom: "1px solid rgba(0,0,0,.125)" }}
               />
               <Card.Body>
-                <Card.Title>Blog do Vini</Card.Title>
+                <Card.Title>Blog</Card.Title>
                 <Card.Text>
-                  Projeto desenvolvido em Next.js, CSS, Node.js e MongoDB.
+                  Projeto desenvolvido em NextJS, CSS, NodeJS e MongoDB.
                 </Card.Text>
                 <div className="button-links">
                   <form
@@ -103,7 +103,7 @@ const Projects = () => {
               <Card.Img variant="top" src={img4} />
               <Card.Body>
                 <Card.Title>Calculadora</Card.Title>
-                <Card.Text>Projeto desenvolvido em React.js e CSS.</Card.Text>
+                <Card.Text>Projeto desenvolvido em ReactJS e CSS.</Card.Text>
                 <div className="button-links">
                   <form
                     action="https://github.com/ViniSpirit/Calculator"
@@ -158,7 +158,7 @@ const Projects = () => {
               <Card.Body>
                 <Card.Title>Proshop</Card.Title>
                 <Card.Text>
-                  Projeto desenvolvido em React.js Node.js MongoDB e React
+                  Projeto desenvolvido em ReactJS, NodeJS, MongoDB e React
                   Bootstrap.
                 </Card.Text>
                 <div className="button-links">
