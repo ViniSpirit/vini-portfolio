@@ -6,6 +6,7 @@ import Header from "../components/Header";
 import img3 from "../images/projects/portfolio/portfolio.jpg";
 import img4 from "../images/projects/calculadora/calculadora.jpg";
 import img5 from "../images/projects/blog/blog.jpg";
+import img6 from "../images/projects/moveit/moveit.jpg";
 
 import proImg from "../images/projects/proshop/proshop.jpg";
 import proImg2 from "../images/projects/proshop/proshop2.jpg";
@@ -102,6 +103,52 @@ const Projects = () => {
             </Card>
 
             {/* Card 3 */}
+
+            <Card
+              style={{
+                width: "100%",
+                backgroundColor: "#eee",
+                boxShadow: "0 1px 8px 5px rgb(30 60 90 / 20%)",
+              }}
+            >
+              <Card.Img
+                variant="top"
+                src={img6}
+                style={{ borderBottom: "1px solid rgba(0,0,0,.125)" }}
+              />
+              <Card.Body>
+                <Card.Title>Moveit</Card.Title>
+                <Card.Text>
+                  <strong>Descrição: </strong>
+                  App de desafios para melhorar a saúde de quem passa muitas
+                  horas em frente ao computador.
+                  <br />
+                  <strong>Tecnologias: </strong>NextJS, Context API e CSS.
+                </Card.Text>
+                <div className="button-links">
+                  <form
+                    action="https://github.com/ViniSpirit/moveit"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <button className="cardBtn" type="submit">
+                      Veja no Github
+                    </button>
+                  </form>
+                  <form
+                    action="https://moveit-inky-nine.vercel.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <button className="cardBtn" type="submit">
+                      Link do Projeto
+                    </button>
+                  </form>
+                </div>
+              </Card.Body>
+            </Card>
+
+            {/* card 4 */}
             <Card
               style={{
                 width: "100%",
@@ -142,8 +189,8 @@ const Projects = () => {
               </Card.Body>
             </Card>
 
-            {/* Card 4 */}
-            <Card
+            {/* Card 5 */}
+            {/* <Card
               style={{
                 width: "100%",
                 backgroundColor: "#eee",
@@ -197,7 +244,7 @@ const Projects = () => {
                   </form>
                 </div>
               </Card.Body>
-            </Card>
+            </Card> */}
           </div>
         </div>
       </section>
