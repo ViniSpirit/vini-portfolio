@@ -1,24 +1,24 @@
-import React, { useState } from "react";
-import { Spinner } from "react-bootstrap";
-import axios from "axios";
-import Header from "../components/Header";
+import React, { useState } from "react"
+import { Spinner } from "react-bootstrap"
+import axios from "axios"
+import Header from "../components/Header"
 
 const Contact = () => {
-  const [nome, setNome] = useState("");
-  const [email, setEmail] = useState("");
-  const [assunto, setAssunto] = useState("");
-  const [msg, setMsg] = useState("");
-  const [alert, setAlert] = useState("");
+  const [nome, setNome] = useState("")
+  const [email, setEmail] = useState("")
+  const [assunto, setAssunto] = useState("")
+  const [msg, setMsg] = useState("")
+  const [alert, setAlert] = useState("")
 
   const sendEmail = async (e) => {
-    e.preventDefault();
+    e.preventDefault()
 
     // const config = {
     //   headers: {
     //     "Content-type": "application/json",
     //   },
     // };
-    setAlert("carregando");
+    setAlert("carregando")
     const { data } = await axios.post(
       "https://vini-portfolio-backend.herokuapp.com/api/email",
       {
@@ -28,13 +28,13 @@ const Contact = () => {
         content: msg,
       }
       // config
-    );
+    )
     if (data === "enviado") {
-      setAlert("enviado");
+      setAlert("enviado")
     } else {
-      setAlert("");
+      setAlert("")
     }
-  };
+  }
 
   return (
     <>
@@ -42,7 +42,7 @@ const Contact = () => {
       <section className="contact">
         <h1 className="contact-title">Contato</h1>
         <div
-          className="max-width"
+          className=" contact-width"
           style={{
             marginBottom: "0",
           }}
@@ -55,6 +55,7 @@ const Contact = () => {
                 para entrar em contato pelo Whatsapp ou email responderei assim
                 que possível.
               </p>
+
               <div className="item">
                 <i className="fab fa-whatsapp"></i>
                 <div>
@@ -129,46 +130,46 @@ const Contact = () => {
               )}
             </div>
           </div>
-          <footer
-            className="footer"
-            style={{
-              padding: "18px 0 13px 0",
-              margin: 0,
-            }}
-          >
-            <a
-              href="https://github.com/ViniSpirit"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <i style={{ color: "#333" }} className="fab fa-github"></i>
-            </a>
-
-            <a
-              href="https://www.linkedin.com/in/marcos-vinicius-75863a74/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <i
-                style={{ color: "#333", marginLeft: "30px" }}
-                className="fab fa-linkedin"
-              ></i>
-            </a>
-            <a
-              href="https://twitter.com/ViniSpiritDev"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <i
-                style={{ color: "#333", marginLeft: "30px" }}
-                className="fab fa-twitter-square"
-              ></i>
-            </a>
-          </footer>
         </div>
+        <footer
+          className="footer"
+          style={{
+            padding: "18px 0 13px 0",
+            margin: 0,
+          }}
+        >
+          <a
+            href="https://github.com/ViniSpirit"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i style={{ color: "#333" }} className="fab fa-github"></i>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/marcos-vinicius-75863a74/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i
+              style={{ color: "#333", marginLeft: "30px" }}
+              className="fab fa-linkedin"
+            ></i>
+          </a>
+          <a
+            href="https://twitter.com/ViniSpiritDev"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i
+              style={{ color: "#333", marginLeft: "30px" }}
+              className="fab fa-twitter-square"
+            ></i>
+          </a>
+        </footer>
       </section>
     </>
-  );
-};
+  )
+}
 
-export default Contact;
+export default Contact

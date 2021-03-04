@@ -1,5 +1,6 @@
 .max-width {
   max-width: 1300px;
+
   margin: auto;
 }
 
@@ -105,11 +106,11 @@
 
 .home {
   display: flex;
-  background: url("./images/teclado2.jpg") no-repeat center;
+  background: url("./images/teclado2.jpg") center;
   flex-direction: column;
   height: 100vh;
   color: #fff;
-  min-height: 500px;
+  /* min-height: 500px; */
   font-family: "Ubuntu", sans-serif;
 }
 
@@ -430,11 +431,17 @@
 
 /* Contact section */
 
+.contact-width {
+  max-width: 1300px;
+
+  margin: auto;
+}
+
 .contact {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-
+  justify-content: flex-start;
+  height: 100vh;
   font-family: "Ubuntu", sans-serif;
 }
 .contact-title {
@@ -446,7 +453,7 @@
 .contact-content {
   display: flex;
 
-  padding: 20px 20px 100px 20px;
+  padding: 0 20px 100px 20px;
   justify-content: center;
 }
 
@@ -732,5 +739,11 @@
   .cardBtn {
     width: 112px;
     font-size: 14px;
+  }
+}
+
+@media (min-height: 1100px) {
+  .contact-width {
+    margin: 0 auto;
   }
 }
