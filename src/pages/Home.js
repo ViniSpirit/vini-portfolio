@@ -1,6 +1,6 @@
-import React from "react";
+import React from "react"
 
-import Header from "../components/Header";
+import Header from "../components/Header"
 
 const Home = ({ history }) => {
   return (
@@ -48,7 +48,7 @@ const Home = ({ history }) => {
         </footer>
       </section>
     </>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home
