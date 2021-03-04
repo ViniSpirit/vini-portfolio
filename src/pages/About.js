@@ -90,14 +90,14 @@ const About = () => {
         <div className="max-width ">
           <h2 className="text3">Minhas Habilidades</h2>
           <div className="atributos">
-            <h2>Skills Level</h2>
+            <h2>Nível</h2>
             <div className="tech">
               <p>JavaScript</p>
               <ProgressBar
                 style={{ height: "25px" }}
                 animated
-                now={90}
-                label={"90%"}
+                now={80}
+                label={"80%"}
               />
             </div>
             <div className="tech">
@@ -167,6 +167,15 @@ const About = () => {
             </div>
             <div className="tech">
               <p>NextJS</p>
+              <ProgressBar
+                style={{ height: "25px" }}
+                animated
+                now={80}
+                label={"80%"}
+              />
+            </div>
+            <div className="tech">
+              <p>TypeScript</p>
               <ProgressBar
                 style={{ height: "25px" }}
                 animated

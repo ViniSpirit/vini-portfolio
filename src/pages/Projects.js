@@ -7,6 +7,7 @@ import img3 from "../images/projects/portfolio/portfolio.jpg";
 import img4 from "../images/projects/calculadora/calculadora.jpg";
 import img5 from "../images/projects/blog/blog.jpg";
 import img6 from "../images/projects/moveit/moveit.jpg";
+import img7 from "../images/projects/codeby/codeby.jpg";
 
 import proImg from "../images/projects/proshop/proshop.jpg";
 import proImg2 from "../images/projects/proshop/proshop2.jpg";
@@ -56,6 +57,7 @@ const Projects = () => {
             </Card>
 
             {/* Card 2 */}
+
             <Card
               style={{
                 width: "100%",
@@ -65,23 +67,22 @@ const Projects = () => {
             >
               <Card.Img
                 variant="top"
-                src={img5}
+                src={img6}
                 style={{ borderBottom: "1px solid rgba(0,0,0,.125)" }}
               />
               <Card.Body>
-                <Card.Title>Blog</Card.Title>
+                <Card.Title>Moveit</Card.Title>
                 <Card.Text>
                   <strong>Descrição: </strong>
-                  Desenvolvi este projeto para testar o poder do NextJS com
-                  geração de páginas estáticas e renderização do lado do
-                  servidor.
+                  App de desafios para melhorar a saúde de quem passa muitas
+                  horas em frente ao computador.
                   <br />
-                  <strong>Tecnologias: </strong>NextJS, CSS, NodeJS, Express,
-                  MongoDB e Markdown.
+                  <strong>Tecnologias: </strong>NextJS, Context API, TypeScript,
+                  CSS.
                 </Card.Text>
                 <div className="button-links">
                   <form
-                    action="https://github.com/ViniSpirit/vini-blog"
+                    action="https://github.com/ViniSpirit/moveit"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -90,7 +91,7 @@ const Projects = () => {
                     </button>
                   </form>
                   <form
-                    action="https://vini-blog.vinispirit.vercel.app/"
+                    action="https://moveit-inky-nine.vercel.app/"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -113,21 +114,21 @@ const Projects = () => {
             >
               <Card.Img
                 variant="top"
-                src={img6}
+                src={img7}
                 style={{ borderBottom: "1px solid rgba(0,0,0,.125)" }}
               />
               <Card.Body>
-                <Card.Title>Moveit</Card.Title>
+                <Card.Title>Layout</Card.Title>
                 <Card.Text>
                   <strong>Descrição: </strong>
-                  App de desafios para melhorar a saúde de quem passa muitas
-                  horas em frente ao computador.
+                  Projeto de uma home page agradável e responsivo, usando
+                  bastante Flexbox.
                   <br />
-                  <strong>Tecnologias: </strong>NextJS, Context API e CSS.
+                  <strong>Tecnologias: </strong>HTML, CSS.
                 </Card.Text>
                 <div className="button-links">
                   <form
-                    action="https://github.com/ViniSpirit/moveit"
+                    action="https://github.com/ViniSpirit/layout-codeby"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -136,7 +137,55 @@ const Projects = () => {
                     </button>
                   </form>
                   <form
-                    action="https://moveit-inky-nine.vercel.app/"
+                    action="https://layout-codeby.vercel.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <button className="cardBtn" type="submit">
+                      Link do Projeto
+                    </button>
+                  </form>
+                </div>
+              </Card.Body>
+            </Card>
+
+            {/* card 4 */}
+
+            <Card
+              style={{
+                width: "100%",
+                backgroundColor: "#eee",
+                boxShadow: "0 1px 8px 5px rgb(30 60 90 / 20%)",
+              }}
+            >
+              <Card.Img
+                variant="top"
+                src={img5}
+                style={{ borderBottom: "1px solid rgba(0,0,0,.125)" }}
+              />
+              <Card.Body>
+                <Card.Title>Blog</Card.Title>
+                <Card.Text>
+                  <strong>Descrição: </strong>
+                  Desenvolvi este projeto para testar o poder do NextJS com
+                  geração de páginas estáticas e renderização do lado do
+                  servidor.
+                  <br />
+                  <strong>Tecnologias: </strong>NextJS, CSS, NodeJS, Express,
+                  MongoDB, Markdown.
+                </Card.Text>
+                <div className="button-links">
+                  <form
+                    action="https://github.com/ViniSpirit/vini-blog"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <button className="cardBtn" type="submit">
+                      Veja no Github
+                    </button>
+                  </form>
+                  <form
+                    action="https://vini-blog.vinispirit.vercel.app/"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -164,7 +213,7 @@ const Projects = () => {
                   deu uma boa noção sobre a biblioteca e lógica de programação
                   no geral.
                   <br />
-                  <strong>Tecnologias: </strong>ReactJS e CSS.
+                  <strong>Tecnologias: </strong>ReactJS, CSS.
                 </Card.Text>
                 <div className="button-links">
                   <form
