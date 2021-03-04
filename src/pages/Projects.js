@@ -1,16 +1,11 @@
-import React from "react";
+import { Card } from "react-bootstrap"
+import Header from "../components/Header"
 
-import { Card, Carousel } from "react-bootstrap";
-import Header from "../components/Header";
-
-import img3 from "../images/projects/portfolio/portfolio.jpg";
-import img4 from "../images/projects/calculadora/calculadora.jpg";
-import img5 from "../images/projects/blog/blog.jpg";
-import img6 from "../images/projects/moveit/moveit.jpg";
-import img7 from "../images/projects/codeby/codeby.jpg";
-
-import proImg from "../images/projects/proshop/proshop.jpg";
-import proImg2 from "../images/projects/proshop/proshop2.jpg";
+import img3 from "../images/projects/portfolio/portfolio.jpg"
+import img4 from "../images/projects/calculadora/calculadora.jpg"
+import img5 from "../images/projects/blog/blog.jpg"
+import img6 from "../images/projects/moveit/moveit.jpg"
+import img7 from "../images/projects/codeby/codeby.jpg"
 
 const Projects = () => {
   return (
@@ -237,63 +232,6 @@ const Projects = () => {
                 </div>
               </Card.Body>
             </Card>
-
-            {/* Card 5 */}
-            {/* <Card
-              style={{
-                width: "100%",
-                backgroundColor: "#eee",
-                boxShadow: "0 1px 8px 5px rgb(30 60 90 / 20%)",
-              }}
-            >
-              <Carousel>
-                <Carousel.Item>
-                  <img
-                    style={{ borderBottom: "1px solid rgba(0,0,0,.125)" }}
-                    className="d-block w-100"
-                    src={proImg}
-                    alt="First slide"
-                  />
-                </Carousel.Item>
-                <Carousel.Item>
-                  <img
-                    style={{
-                      borderBottom: "1px solid rgba(0,0,0,.125)",
-                    }}
-                    className="d-block w-100"
-                    src={proImg2}
-                    alt="First slide"
-                  />
-                </Carousel.Item>
-              </Carousel>
-              <Card.Body>
-                <Card.Title>Proshop</Card.Title>
-                <Card.Text>
-                  <strong>Descrição: </strong>Estou trabalhando em um
-                  E-Commerce, meu maior projeto até agora, assim que estiver
-                  pronto coloco no ar.
-                  <br />
-                  <strong>Tecnologias: </strong>ReactJS, Bootsrap, Redux,
-                  NodeJS, Express e MongoDB.
-                </Card.Text>
-                <div className="button-links">
-                  <form
-                    action="https://github.com/ViniSpirit/proshop"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <button
-                      style={{ marginRight: "20px" }}
-                      className="cardBtn"
-                      type="submit"
-                    >
-                      Veja no Github
-                    </button>
-                    (produção...)
-                  </form>
-                </div>
-              </Card.Body>
-            </Card> */}
           </div>
         </div>
       </section>
@@ -334,7 +272,7 @@ const Projects = () => {
         </a>
       </footer>
     </>
-  );
-};
+  )
+}
 
-export default Projects;
+export default Projects
