@@ -6,6 +6,7 @@ import img4 from "../images/projects/calculadora/calculadora.jpg"
 import img5 from "../images/projects/blog/blog.jpg"
 import img6 from "../images/projects/moveit/moveit.jpg"
 import img7 from "../images/projects/codeby/codeby.jpg"
+import img8 from "../images/projects/login/loginGif.gif"
 
 const Projects = () => {
   return (
@@ -63,7 +64,9 @@ const Projects = () => {
               <Card.Img
                 variant="top"
                 src={img6}
-                style={{ borderBottom: "1px solid rgba(0,0,0,.125)" }}
+                style={{
+                  borderBottom: "1px solid rgba(0,0,0,.125)",
+                }}
               />
               <Card.Body>
                 <Card.Title>Moveit</Card.Title>
@@ -109,8 +112,62 @@ const Projects = () => {
             >
               <Card.Img
                 variant="top"
+                src={img8}
+                style={{
+                  maxHeight: "312px",
+                  width: "100%",
+                  height: "auto",
+                  borderBottom: "1px solid rgba(0,0,0,.125)",
+                }}
+              />
+              <Card.Body>
+                <Card.Title>Login/Register System</Card.Title>
+                <Card.Text>
+                  <strong>Descrição: </strong>
+                  Sistema de login e registro básico com senha criptografada
+                  salva no banco de dados.
+                  <br />
+                  <strong>Tecnologias: </strong>NextJS, TypeScript, ContextAPI,
+                  Serverless, CSS/Material-UI, MongoDB.
+                </Card.Text>
+                <div className="button-links">
+                  <form
+                    action="https://github.com/ViniSpirit/login-register-project"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <button className="cardBtn" type="submit">
+                      Veja no Github
+                    </button>
+                  </form>
+                  <form
+                    action="https://vini-login-project.vercel.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <button className="cardBtn" type="submit">
+                      Link do Projeto
+                    </button>
+                  </form>
+                </div>
+              </Card.Body>
+            </Card>
+
+            {/* Card 4 */}
+
+            <Card
+              style={{
+                width: "100%",
+                backgroundColor: "#eee",
+                boxShadow: "0 1px 8px 5px rgb(30 60 90 / 20%)",
+              }}
+            >
+              <Card.Img
+                variant="top"
                 src={img7}
-                style={{ borderBottom: "1px solid rgba(0,0,0,.125)" }}
+                style={{
+                  borderBottom: "1px solid rgba(0,0,0,.125)",
+                }}
               />
               <Card.Body>
                 <Card.Title>Layout</Card.Title>
@@ -144,7 +201,7 @@ const Projects = () => {
               </Card.Body>
             </Card>
 
-            {/* card 4 */}
+            {/* card 5 */}
 
             <Card
               style={{
@@ -156,7 +213,9 @@ const Projects = () => {
               <Card.Img
                 variant="top"
                 src={img5}
-                style={{ borderBottom: "1px solid rgba(0,0,0,.125)" }}
+                style={{
+                  borderBottom: "1px solid rgba(0,0,0,.125)",
+                }}
               />
               <Card.Body>
                 <Card.Title>Blog</Card.Title>
@@ -192,7 +251,7 @@ const Projects = () => {
               </Card.Body>
             </Card>
 
-            {/* card 4 */}
+            {/* card 6 */}
             <Card
               style={{
                 width: "100%",
