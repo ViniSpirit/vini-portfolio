@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useState } from "react"
 
-import { ProgressBar } from "react-bootstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
-import Header from "../components/Header";
-import profile from "../images/profile.jpg";
-import pdf from "../images/mv.pdf";
+import { ProgressBar } from "react-bootstrap"
+import "bootstrap/dist/css/bootstrap.min.css"
+import Header from "../components/Header"
+import profile from "../images/profile.jpg"
+import pdf from "../images/mv.pdf"
+import Footer from "../components/Footer"
 const About = () => {
   const pt = {
     title: "Meu nome é Marcos Vinicius e sou ",
@@ -15,9 +16,9 @@ const About = () => {
     sou um desenvolvedor Full-Stack.`,
     span: "Desenvolvedor Web",
     status: "pt",
-  };
+  }
 
-  const [description] = useState(pt);
+  const [description] = useState(pt)
   return (
     <>
       <Header page about />
@@ -198,44 +199,9 @@ const About = () => {
         </div>
       </section>
 
-      <footer
-        className="footer"
-        style={{
-          padding: "18px 0 13px 0",
-          margin: 0,
-        }}
-      >
-        <a
-          href="https://github.com/ViniSpirit"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <i style={{ color: "#333" }} className="fab fa-github"></i>
-        </a>
-
-        <a
-          href="https://www.linkedin.com/in/marcos-vinicius-75863a74/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <i
-            style={{ color: "#333", marginLeft: "30px" }}
-            className="fab fa-linkedin"
-          ></i>
-        </a>
-        <a
-          href="https://twitter.com/ViniSpiritDev"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <i
-            style={{ color: "#333", marginLeft: "30px" }}
-            className="fab fa-twitter-square"
-          ></i>
-        </a>
-      </footer>
+      <Footer color="#333" />
     </>
-  );
-};
+  )
+}
 
-export default About;
+export default About
